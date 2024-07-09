@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+</head>
+<form action="main.js">
+<body>
+    <h1> Licence Registration Form</h1>
+    <div>
+        <label for="FullName">FullName :</label>
+        <input type="text" name="FullName" id="FullName"required><br><br>
+        <label for="Date Of Birth">Date Of Birth :</label>
+        <input type="date" name="Date Of Birth" id="Date Of Birth"required><br><br>
+    </div>
+    
+    <div>
+        <label >Are you older than 18 ?</label><br>
+        <input type="radio" name="age" id="Yes"required>
+        <label for="Yes">Yes</label>
+        <input type="radio" name="age" id="No"required>
+        <label for="No">No</label>    
+    </div>
+    <br>
+
+    <div>
+        <label >State :</label>
+           <select name="state" id="st">
+           <option value="">select your state</option>
+           <option value="aaa">aaa</option>
+           <option value="bbb">bbb</option>
+           <option value="ccc">ccc</option>
+           <option value="ddd">ddd</option>
+           <option value="eee">eee</option>
+           
+        </select>
+    </div>
+    <br>
+    <div>
+        <fieldset>
+            <legend><b>Gender</b></legend>
+            <input type="radio" name="gender" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id ="Other">
+            <label for="Other">Other</label><br>
+            <input type="radio" name="gender" id="not-ans">
+            <label for="not-ans">Prefer not to answer</label>
+        </fieldset>
+    </div>
+    <br>
+    <div>
+        <address>
+            <textarea name="address" id="adrs" cols="50"rows="3" placeholder="Enter your address" required></textarea>
+        </address>
+    </div>
+    <br>
+    <div>
+        <label for="phone">Phone Number :</label>
+        <input type="tel" name="phone" id="phone"placeholder="0000000000"required>
+    </div>
+    <br>
+    <div>
+        <label for="email">Email Adress :</label>
+        <input type="email" name="email" id="email"required>
+    </div>
+    <br>
+    <div>
+        <label >Upload Your passport size Photo or Signature :</label>
+        <input type="file" name="file" id="file" required>
+
+    </div>
+    <br>
+
+    <fieldset>
+        <legend><b>Vehicle Information</b></legend>
+    <div>
+        <label for="vehicleType">Vehicle Type :</label>
+        <select name="vehicleType" id="vehicletype">
+            <optgroup label="passenger vehicles">
+                <option value="car">car</option>
+                <option value="van">van</option>
+                <option value="truck">truck</option>
+            </optgroup>
+            <optgroup label="Motorcycles">
+                <option value="sportbike">sportbike</option>
+                <option value="scrambler">scrambler</option>
+                <option value="scooter">scooter</option>
+            </optgroup>
+            <optgroup label="Agricultural vehicle">
+                <option value="tractor">tractor</option>
+                <option value="farmtruck">farmtruck</option>
+                <option value="rototiller">rototiller</option>
+            </optgroup>
+            <optgroup label="specialty vehicle">
+                <option value="schoolbus">schoolbus</option>
+                <option value="ambulance">ambulance</option>
+                <option value="policeVehicle">policeVehicle</option>
+            </optgroup>
+            <optgroup label="construction vehicle">
+                <option value="roller">roller</option>
+                <option value="mixer truck">mixer truck</option>
+                <option value="harvester">harvester</option>
+            </optgroup>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="model">Vehicle Model :</label>
+      <input type="text" name="model" id="model"required>
+    </div>
+    <br>
+    <div>
+        <label for="Manufacture">Year of Manufacture :</label>
+        <input type="number" name="Manufacture" id="Manufacture" >
+    </div>
+    <br>
+    <div>
+        <label for="vin">Vehicle Identification number :</label>
+        <input type="text" name="vin" id="vin"required>  
+    </div>
+    <br>
+    <div>
+        <label for="reading">Vehicle odometer reading :</label>
+        <input type="number" name="reading" id="reading"required>
+    </div>
+    <br>
+    <div>
+        <label for="fuel">vehicle-Fuel type :</label>
+        <select name="FuelType" id="FuelType"required>
+            <option value="">Select</option>
+            <option value="diesel">diesel</option>
+            <option value="petrol">petrol</option>
+            <option value="electric">electric</option>
+        </select>
+    </div>
+    </fieldset>
+    <br>
+    <div>
+        <br>
+
+    <div>
+        <input type="submit" value="register">
+        <input type="reset" value="reset">
+    </div>
+
+    
+</form>
+</body>
+</html>

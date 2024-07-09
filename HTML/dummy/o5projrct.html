@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Vehicle Lisence Resistration form</h1>
+    <form action="main.js">
+        <div><p><b>Name :</b></p>
+        <input type="text" name="Firstname" id="fname" placeholder="Firstname" required><br><br>
+        <input type="text" name="Lastname" id="Lname" placeholder="Lastname" required>
+        </div>
+        <br>
+
+        <div><p><b>Address :</b></p>
+            <address>
+              <textarea name="address" id="adrs" cols="50"rows="2" placeholder="Address"></textarea>
+            </address>
+        </div>
+        <br>
+
+        <div><p><b>Email :</b></p>
+            <input type="email" name="email" id="eml" placeholder="enter your email"required><br><br>
+        </div>
+        <br>
+
+        <div><p><b>Age :</b></p>
+            <input type="number" name="number" id="ag" placeholder="enter your age" min="18"required><br><br>
+        </div>
+        <br>
+
+        <div>
+            <fieldset>
+                <legend >Gender</legend>
+                <input type="radio" name="gender" id="ml">
+                <label for="ml"> male</label>
+                <input type="radio" name="gender"id="fml">
+                <label for="fml">Female</label>
+                <input type="radio" name="gender"id=othr>
+                <label for="othr">Other</label><br>
+                <input type="radio" name="gender"id=no-ans>
+                <label for="no-ans">Prefer not to answer</label>
+            </fieldset>  
+        </div>
+        <br>
+
+        <div>
+            <p><b><b>State :</b></b></p>
+               <select name="state" id="st">
+               <option value="">select your state</option>
+               <option value="Andhra Pradesh">Andhra Pradesh</option>
+               <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+               <option value="Assam">Assam</option>
+               <option value="Bihar">Bihar</option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               
+            </select>
+        </div>
+        <br>
+
+        <div> 
+            <p><b>applying for:</b></p>
+            <select name="apply-for" id="apply">
+              <option value="">select</option>
+              <option value="Driving Licence">Driving Licence</option>
+              <option value="Lerning Permit">Learning Permit</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <p><b>Purpose :</b></p>
+            <input type="checkbox" name="pur" id="nw">
+            <label for="nw">NEW</label>
+            <input type="checkbox"name="pur" id ="change">
+            <label for="change">CHANGE TYPE</label>
+            <input type="checkbox" name="pur"id="rnw">
+            <label for="rnw">RENEW</label>
+            <input type="checkbox"name="pur" id="updt">
+            <label for="updt">UPDATE INFO</label>
+            <input type="checkbox"name="pur" id = "trans">
+            <label for="trans">TRANSFER</label>
+        </div>
+        <br>
+
+        <div><p><b>Upload Your Passport Size Photo :</b></p>
+            <input type="file" name="file"id="fl">
+        </div>
+
+        <div>
+           <p><b>Mobile Number :</b>
+                <input type="number" name="number"id="phn" placeholder="0000000000"></p>
+        </div>
+        <br>
+
+        <div>
+            <b>Date Of Birth :</b>
+                <input type="date" name="year"id=dt>
+        </div>
+        <br>
+
+      <div><p><b>Passward :</b></p>
+        <input type="password"name="password"id="pass"placeholder="Enter Password"><br>
+        <p><b>Confirm Password :</b></p>
+        <input type="password"name="repeat password"id="rpt-pass" placeholder="Repeat Password">
+      </div>
+      <br>
+
+      <div>
+        <input type="submit"value="register">
+        <input type="reset" value="reset">
+      </div>
+      
+    </form>
+</body>
+</html>

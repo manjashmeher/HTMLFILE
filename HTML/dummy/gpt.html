@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration Form</title>
+</head>
+<body>
+    <h1>Vehicle Registration Form</h1>
+    <form action="/submit_registration" method="post">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="
+only html
+ChatGPT
+Sure, here is the HTML code for a vehicle registration form with grouping for different types of vehicles:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration Form</title>
+</head>
+<body>
+    <h1>Vehicle Registration Form</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="address">Address:</label><br>
+            <input type="text" id="street" name="street" placeholder="Street" required><br>
+            <input type="text" id="city" name="city" placeholder="City" required><br>
+            <input type="text" id="state" name="state" placeholder="State" required><br>
+            <input type="text" id="zip" name="zip" placeholder="Zip Code" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="licenseNumber">Driver's License Number:</label>
+            <input type="text" id="licenseNumber" name="licenseNumber" required><br><br>
+
+            <label for="issuingState">Issuing State:</label>
+            <input type="text" id="issuingState" name="issuingState" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vehicle Information</legend>
+
+            <label for="vehicleType">Vehicle Type:</label>
+            <select id="vehicleType" name="vehicleType" required>
+                <optgroup label="Passenger Vehicles">
+                    <option value="car">Car</option>
+                    <option value="suv">SUV</option>
+                    <option value="van">Van</option>
+                    <option value="pickup">Pickup Truck</option>
+                </optgroup>
+                <optgroup label="Commercial Vehicles">
+                    <option value="boxTruck">Box Truck</option>
+                    <option value="cargoVan">Cargo Van</option>
+                    <option value="deliveryTruck">Delivery Truck</option>
+                    <option value="tractorTrailer">Tractor-Trailer</option>
+                </optgroup>
+                <optgroup label="Motorcycles">
+                    <option value="standard">Standard</option>
+                    <option value="cruiser">Cruiser</option>
+                    <option value="sportBike">Sport Bike</option>
+                    <option value="touring">Touring</option>
+                    <option value="scooter">Scooter</option>
+                </optgroup>
+                <optgroup label="Recreational Vehicles (RVs)">
+                    <option value="motorhome">Motorhome</option>
+                    <option value="travelTrailer">Travel Trailer</option>
+                    <option value="camperVan">Camper Van</option>
+                    <option value="fifthWheel">Fifth-Wheel Trailer</option>
+                </optgroup>
+                <optgroup label="Specialty Vehicles">
+                    <option value="ambulance">Ambulance</option>
+                    <option value="fireTruck">Fire Truck</option>
+                    <option value="policeVehicle">Police Vehicle</option>
+                    <option value="taxi">Taxi</option>
+                </optgroup>
+                <optgroup label="Agricultural Vehicles">
+                    <option value="tractor">Tractor</option>
+                    <option value="combineHarvester">Combine Harvester</option>
+                    <option value="plow">Plow</option>
+                </optgroup>
+                <optgroup label="Construction Vehicles">
+                    <option value="bulldozer">Bulldozer</option>
+                    <option value="excavator">Excavator</option>
+                    <option value="crane">Crane</option>
+                    <option value="loader">Loader</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="make">Vehicle Make:</label>
+            <input type="text" id="make" name="make" required><br><br>
+
+            <label for="model">Vehicle Model:</label>
+            <input type="text" id="model" name="model" required><br><br>
+
+            <label for="year">Year of Manufacture:</label>
+            <input type="number" id="year" name="year" required><br><br>
+
+            <label for="vin">Vehicle Identification Number (VIN):</label>
+            <input type="text" id="vin" name="vin" required><br><br>
+
+            <label for="licensePlate">License Plate Number:</label>
+            <input type="text" id="licensePlate" name="licensePlate" required><br><br>
+
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" required><br><br>
+
+            <label for="odometer">Odometer Reading:</label>
+            <input type="number" id="odometer" name="odometer" required><br><br>
+
+            <label for="fuelType">Fuel Type:</label>
+            <select id="fuelType" name="fuelType" required>
+                <option value="gasoline">Gasoline</option>
+                <option value="diesel">Diesel</option>
+                <option value="electric">Electric</option>
+                <option value="hybrid">Hybrid</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Insurance Information</legend>
+            <label for="insuranceCompany">Insurance Company:</label>
+            <input type="text" id="insuranceCompany" name="insuranceCompany" required><br><br>
+
+            <label for="policyNumber">Policy Number:</label>
+            <input type="text" id="policyNumber" name="policyNumber" required><br><br>
+
+            <label for="policyExpiration">Policy Expiration Date:</label>
+            <input type="date" id="policyExpiration" name="policyExpiration" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Declaration</legend>
+            <p>I hereby declare that the information provided is true and correct to the best of my knowledge.</p>
+            <label for="signature">Signature:</label>
+            <input type="text" id="signature" name="signature" required><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+     <h2>HTML input tags</h2>
+     <form action="main.js">
+       <div>
+        <label for="nm">Name:</label>
+        <input type="text"name="my name"id="nm">
+       </div>
+       <br>
+       <div>
+        <label for="eml">Email:</label>
+       <input type="email" name="my email" id="eml">
+       </div>
+       <br>
+       <div>
+        <label for="pas">Password:</label>
+       <input type="password" name="my password" id="pas">
+       </div>
+       <br>
+       <div>Year:
+        <input type="date" name="date" id="Dt">
+       </div>
+       <br>
+       <div>Time:
+        <input type="time" name="time" id="tm">
+       </div>
+       <br>
+       <div>date-time:
+        <input type="datetime-local" name="datetime" id="dttm">
+       </div>     
+       <div>month:
+       <input type="month" name="month" id="mnth">
+       </div>
+       <br>
+       <div>week:
+        <input type="week" name="week" id="wk">
+       </div>
+       <br>
+       <div>Tel:
+        <input type="tel" name="tel" id="tl">
+       </div>
+       <br>
+       <div>
+        <label for="num">age:</label>
+        <input type="number" name="age" id="num">
+       </div>
+       <br>
+       <div>
+        <fieldset>
+          <legend>Gender</legend>
+          
+          <input type="radio"name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender"id=female>
+          <label for="female">Female</label>
+        </fieldset>
+       </div>
+       <br>
+       <div>
+       <input type="submit" value="submit">
+       </div>
+       <br>
+       <div>
+        <input type="reset" value="reset">
+       </div>
+       <br>
+       <div>
+        <input type="file" name="my file" id="fl">
+       </div>
+       <br>
+       <div> preference :
+        <input type="checkbox"name="pref" id="abc" checked><!-- checked  ka matlab pehle se tick karte hue ata he-->
+        <label for="abc">abc</label>
+
+        <input type="checkbox"name="pref" id="Delhi">  <!-- input type checkbox multiple select k liye hota hain-->
+        <label for="Delhi">Delhi</label>
+
+         <input type="checkbox"name="pref" id="Jaipur" disabled><!--disabled   means aap use select nahi kar sakte-->
+         <label for="Jaipur">Jaipur</label>
+
+        <input type="checkbox" name="pref"id="Goa">
+        <label for="Goa">Goa</label>
+       </div>
+       <br>
+
+       <div>
+        <label >select country:</label>
+        <select name="Country"> <!-- if me size="3" enter karu toh ek sath 3 show karega fir ye dropdown nehi rahega wo fir scrole k hisab se ayega-->
+          <option value="INDIA">WES</option>
+          <option value="AUS">AUS</option>
+          <option value="WES" selected>INDIA</option><!-- (default value country)selected se pehla select ye wala ho kar ayega-->
+          <optgroup label="group=A">   <!-- out group for group in dropdown list-->
+          <option value="AFG">AFG</option>
+          <option value="NWZ">NWZ</option>
+          <option value="RSA">RSA</option>
+          </optgroup>
+
+          <option value="USA">USA</option>
+          <option value="SL">SL</option>
+        </select>
+       </div>
+       <br>
+       <div>
+        <label >select your state:</label>
+       <select name="state" multiple size="2">
+          <option value="abc">abc</option>
+          <option value="bcd">bcd</option>
+          <option value="cde">cde</option>
+          <option value="def">def</option>
+          <option value="efg">efg</option>
+          <option value="fgh">fgh</option>
+        </select>
+       </div>
+       <br>
+
+       <div>
+        <label for="items">your fav.. fruit:</label>
+        <input name="items"list="fruits">
+        <datalist id="fruits">
+          <option >select</option>
+          <option>Mango</option>
+          <option>Apple</option>
+          <option>Banana</option>
+          <option>P.apple</option>
+        </datalist>
+
+       </div>
+
+
+     </form>
+     
+</body>
+</html>
